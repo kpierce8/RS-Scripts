@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eCog.Proc UserName="pierckbp" Company="Department of Fish and Wildlife" Copyright="" version="20091027" use-reproducable-poly="1" project-unit="5" engine-version="1.5.2" engine-build="1765" update-topology="0" distance_calculation="CG" resampling_compatibility="0" ver="1">
+	<ParamValueSetCntnr></ParamValueSetCntnr>
+	<ObjectDependencies>
+		<ImgLayers>
+			<ChnlProxyCntnr>
+				<Layers>
+					<ChnlProxy strName="Layer 1" flags="4">
+						<Assignment Chnl="0" MapName="main"></Assignment>
+						<LastAssignment Chnl="0" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 2" flags="4">
+						<Assignment Chnl="1" MapName="main"></Assignment>
+						<LastAssignment Chnl="1" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 3" flags="4">
+						<Assignment Chnl="2" MapName="main"></Assignment>
+						<LastAssignment Chnl="2" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 4" flags="4">
+						<Assignment Chnl="3" MapName="main"></Assignment>
+						<LastAssignment Chnl="3" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 5" flags="4">
+						<Assignment Chnl="4" MapName="main"></Assignment>
+						<LastAssignment Chnl="4" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Layer 6" flags="4">
+						<Assignment Chnl="5" MapName="main"></Assignment>
+						<LastAssignment Chnl="5" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+				</Layers>
+				<Variables></Variables>
+			</ChnlProxyCntnr>
+		</ImgLayers>
+		<ThmLayers>
+			<ChnlProxyCntnr>
+				<Layers>
+					<ChnlProxy strName="irslice" flags="8">
+						<Assignment Chnl="1" MapName="main"></Assignment>
+						<LastAssignment Chnl="1" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="2009 Shadows" flags="8">
+						<Assignment Chnl="0" MapName="main"></Assignment>
+						<LastAssignment Chnl="0" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+				</Layers>
+				<Variables></Variables>
+			</ChnlProxyCntnr>
+		</ThmLayers>
+		<MapLvlProxyCntnr>
+			<MapLvlProxies>
+				<MapLvlProxy strName="lev750all250" bVrbl="0">
+					<Assignment MapLvl="2" MapName="main"></Assignment>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				</MapLvlProxy>
+				<MapLvlProxy strName="lev750all2000" bVrbl="0">
+					<Assignment MapLvl="1" MapName="main"></Assignment>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				</MapLvlProxy>
+			</MapLvlProxies>
+			<MapLvlVrblValues></MapLvlVrblValues>
+		</MapLvlProxyCntnr>
+		<ProcVrblCntnr></ProcVrblCntnr>
+		<ClssHrchy EvalInvalid="1" MinProb="0.10000000000000001" NNSlope="0.20000000000000001" RdiResamplOptns="3">
+			<MapUnit>
+				<Map MapName="main" Unit="5"></Map>
+			</MapUnit>
+			<AllClss>
+				<Clss id="2" name="Non-Veg" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="pierckbpadm" tChngTime="1274485457" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="0" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+			</AllClss>
+			<PropTree version="20100426">
+				<AllProps>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274892158" group_id="ratio.pixel.chnl.object.prop">
+						<PropDscrId GUID="FC6EAF9D-C451-4738-9512-02E194A7BD87" InstID="Ratio Layer 6"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 6" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1275669704" group_id="cntrnghb.pixel.chnl.object.prop">
+						<PropDscrId GUID="F166AA8A-C445-4c0d-8598-84720BE03D97" InstID="Contrast to neighbor pixels Layer 6 (3)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 6" scope="" name="valChnl"></DValue>
+							<DValue value="3" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1275669709" group_id="cntrnghb.pixel.chnl.object.prop">
+						<PropDscrId GUID="F166AA8A-C445-4c0d-8598-84720BE03D97" InstID="Contrast to neighbor pixels Layer 4 (3)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 4" scope="" name="valChnl"></DValue>
+							<DValue value="3" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1275669907" group_id="cntrnghb.pixel.chnl.object.prop">
+						<PropDscrId GUID="F166AA8A-C445-4c0d-8598-84720BE03D97" InstID="Contrast to neighbor pixels Layer 2 (3)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 2" scope="" name="valChnl"></DValue>
+							<DValue value="3" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274891523" group_id="hsi.chnl.object.prop">
+						<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Layer 1',G='Layer 2',B='Layer 3')"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 1" scope="" name="valChnl_R"></DValue>
+							<DValue type="img_chnl" value="Layer 2" scope="" name="valChnl_G"></DValue>
+							<DValue type="img_chnl" value="Layer 3" scope="" name="valChnl_B"></DValue>
+							<DValue value="1" type="int" name="iResult"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274891535" group_id="hsi.chnl.object.prop">
+						<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Layer 1,G=Layer 2,B=Layer 3)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 1" scope="" name="valChnl_R"></DValue>
+							<DValue type="img_chnl" value="Layer 2" scope="" name="valChnl_G"></DValue>
+							<DValue type="img_chnl" value="Layer 3" scope="" name="valChnl_B"></DValue>
+							<DValue value="2" type="int" name="iResult"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1278536588" group_id="dist.pos.object.prop">
+						<PropDscrId GUID="DBED318E-A781-40ba-84C5-FA5CC5566182" InstID="Y distance to scene top border"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="1"></DUnitInfo>
+						<Params></Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1279062009" group_id="Metadata 1.metadata.object.prop">
+						<PropDscrId GUID="CE87FF04-2940-42b7-9B70-0CEB143C69CA" InstID="Object Metadata item New Metadata Item"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="Metadata 1" type="string" name="strSrcName"></DValue>
+							<DValue value="New Metadata Item" type="string" name="strName"></DValue>
+							<DValue value="0" type="int" name="eType"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1275669604" group_id="edge.pixel.chnl.object.prop">
+						<PropDscrId GUID="BDA5AE6B-A63C-467d-A1AA-2B9D8347286C" InstID="Edge Contrast of neighbor pixels (Prototype) Layer 4 (3)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 4" scope="" name="valChnl"></DValue>
+							<DValue value="3" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1275669978" group_id="edge.pixel.chnl.object.prop">
+						<PropDscrId GUID="BDA5AE6B-A63C-467d-A1AA-2B9D8347286C" InstID="Edge Contrast of neighbor pixels (Prototype) Layer 2 (3)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 2" scope="" name="valChnl"></DValue>
+							<DValue value="3" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="65538" strUserName="pierckbpadm" tChngTime="1274483186" group_id="ext.geom.object.prop">
+						<PropDscrId GUID="AF0D7167-ADE8-4240-AAA4-AC2C188E9AF5" InstID="Number of pixels"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params></Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1275425731" group_id="relbrdr.nghb.class.prop">
+						<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to Non-Veg"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="2" type="clssId" name="valClss"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="33554434" strUserName="pierckbpadm" tChngTime="1279062083" group_id="cust.object.prop">
+						<PropDscrId GUID="9E068F56-05DA-4ca3-9032-B17C3E125DBA" InstID="Relational Feature 1"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="propDscrId" name="valSlctPropDscr"></DValue>
+							<DValue value="_Relational Feature 1" type="string" name="NameExpr"></DValue>
+							<DValue value="-1" type="int" name="eObjSet"></DValue>
+							<DValue value="Number" type="string" name="pEval"></DValue>
+							<DValue value="0." type="double" name="dMaxDist"></DValue>
+							<DValue value="1" type="int" name="iNoLvl"></DValue>
+							<DValue value="-1" type="clssId" name="valSlctClss"></DValue>
+							<DValue value="1" type="bool" name="bUseAllClss"></DValue>
+							<DValue value="0" type="bool" name="bOld35"></DValue>
+							<DValue value="0" type="int" name="eDistUnit"></DValue>
+							<DValue value="" type="string" name="Comment"></DValue>
+							<DValue value="0" type="bool" name="bShared"></DValue>
+							<DValue value="" type="string" name="strInstGUID"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="65538" strUserName="pierckbp" tChngTime="1320705640" group_id="ext.geom.object.prop">
+						<PropDscrId GUID="91CC47C7-93D6-4829-A54F-44E87267F342" InstID="Length"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="1"></DUnitInfo>
+						<Params></Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1278536588" group_id="dist.pos.object.prop">
+						<PropDscrId GUID="825CF5C0-6258-4130-A834-8418822A1E9A" InstID="X distance to scene left border"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="1"></DUnitInfo>
+						<Params></Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1275671153" group_id="dist.nghb.class.prop">
+						<PropDscrId GUID="5E38EFCC-6A01-4e77-B451-3F5B03E63B98" InstID="Distance to Non-Veg"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="1"></DUnitInfo>
+						<Params>
+							<DValue value="2" type="clssId" name="valClss"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274483272" group_id="stdev.chnl.object.prop">
+						<PropDscrId GUID="4B11667E-1449-440f-8D7B-0A4D90E62B3E" InstID="Standard deviation Layer 4"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 4" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274485004" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Layer 4"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 4" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274485004" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Layer 5"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 5" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274485004" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Layer 1"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 1" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274485004" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Layer 2"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 2" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274485004" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Layer 3"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 3" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274485004" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Layer 6"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 6" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274483805" group_id="maxpix.pixel.chnl.object.prop">
+						<PropDscrId GUID="4207DA29-E9C8-464b-BC44-896B52B52447" InstID="Max. pixel value Layer 4"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 4" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274482229" group_id="irslice.Thematic object attribute.gis.object.prop">
+						<PropDscrId GUID="3055AACC-7913-477a-9E13-1A9F142192D9" InstID="Histogram: irslice"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="thm_chnl" value="irslice" scope="" name="valChnl"></DValue>
+							<DValue value="Histogram" type="string" name="sAttr"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274482165" group_id="2009 Shadows.Thematic object attribute.gis.object.prop">
+						<PropDscrId GUID="3055AACC-7913-477a-9E13-1A9F142192D9" InstID="Histogram: 2009 Shadows"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="thm_chnl" value="2009 Shadows" scope="" name="valChnl"></DValue>
+							<DValue value="Histogram" type="string" name="sAttr"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1279037067" group_id="classname.classfy.class.prop">
+						<PropDscrId GUID="2ECAB4E2-FCE5-4471-86D1-71A09D4892AE" InstID="Class name(0,0)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="0" type="int" name="iDistClss"></DValue>
+							<DValue value="0" type="int" name="iDistImgObj"></DValue>
+							<DValue value="0" type="bool" name="bIntrnName"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274742129" group_id="mdifnei.nghb.chnl.object.prop">
+						<PropDscrId GUID="296513A7-734F-4219-A9E0-7F27773C28F3" InstID="Mean Diff. to neighbors Layer 1 (0)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 1" scope="" name="valChnl"></DValue>
+							<DValue value="0" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="pierckbpadm" tChngTime="1274742068" group_id="mdifnei.nghb.chnl.object.prop">
+						<PropDscrId GUID="296513A7-734F-4219-A9E0-7F27773C28F3" InstID="Mean Diff. to neighbors Layer 6 (0)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Layer 6" scope="" name="valChnl"></DValue>
+							<DValue value="0" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2147483650" strUserName="pierckbpadm" tChngTime="1278536588" group_id="scene.global.prop">
+						<PropDscrId GUID="2367B8A1-538F-4a4c-A4A5-E2871AAA77F7" InstID="Scene ID"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params></Params>
+					</PropDscr>
+					<PropDscr Flag="65538" strUserName="pierckbp" tChngTime="1320705640" group_id="ext.geom.object.prop">
+						<PropDscrId GUID="03E04ED0-94DD-45ee-801E-14D70E6E2417" InstID="Area"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="2"></DUnitInfo>
+						<Params></Params>
+					</PropDscr>
+				</AllProps>
+				<UserGroups></UserGroups>
+			</PropTree>
+			<Brightness>
+				<Map MapName="main">
+					<ChnlWghtBrght>
+						<BrghtWght val="1." chnl="0"></BrghtWght>
+						<BrghtWght val="1." chnl="1"></BrghtWght>
+						<BrghtWght val="1." chnl="2"></BrghtWght>
+						<BrghtWght val="1." chnl="3"></BrghtWght>
+						<BrghtWght val="1." chnl="4"></BrghtWght>
+						<BrghtWght val="1." chnl="5"></BrghtWght>
+					</ChnlWghtBrght>
+				</Map>
+			</Brightness>
+			<AllVrblClss></AllVrblClss>
+			<AllSubClss>
+				<Clss Id="2" PrfdGrp="2">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+			</AllSubClss>
+			<AllTerm>
+				<Term TermEvalType="0">
+					<TermClause>
+						<TermBase ClssId="2" flags="0" sComment="">
+							<Weight>
+								<DValue value="1" type="int"></DValue>
+							</Weight>
+						</TermBase>
+						<PropDscrId GUID="3055AACC-7913-477a-9E13-1A9F142192D9" InstID="Histogram: irslice"></PropDscrId>
+						<PropHist>
+							<X Val="0."></X>
+							<X Val="0."></X>
+							<X Val="0.33333333333333331"></X>
+							<X Val="0.66666666666666663"></X>
+							<X Val="1."></X>
+							<X Val="1."></X>
+							<X Val="1."></X>
+							<Y Val="1."></Y>
+							<Y Val="1."></Y>
+							<Y Val="1."></Y>
+							<Y Val="1."></Y>
+							<Y Val="1."></Y>
+							<Y Val="1."></Y>
+							<Y Val="0."></Y>
+							<Y Val="33865846."></Y>
+							<Y Val="456827834."></Y>
+							<Incr Val="0."></Incr>
+							<Incr Val="0."></Incr>
+							<Incr Val="0."></Incr>
+							<Incr Val="0."></Incr>
+							<Incr Val="0."></Incr>
+							<Incr Val="0."></Incr>
+							<DUnitInfo Conversion="-1" UnitType="0" Dim="0"></DUnitInfo>
+						</PropHist>
+					</TermClause>
+					<TermBase ClssId="2" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+			</AllTerm>
+		</ClssHrchy>
+		<MapVrblCntnr></MapVrblCntnr>
+		<FtrListVrblCntnr></FtrListVrblCntnr>
+		<CoordVrblCntnr></CoordVrblCntnr>
+		<ROIVrblCntnr></ROIVrblCntnr>
+		<ImgObjListVrblCntnr></ImgObjListVrblCntnr>
+		<Smpls>
+			<AllClss>
+				<SmplList ClssId="2"></SmplList>
+			</AllClss>
+			<AllProp></AllProp>
+		</Smpls>
+		<plugin-list>
+			<plugin name="Definiens Basic Process Algorithms" version="0.1"></plugin>
+			<plugin name="Definiens Internal Process Algorithms" version="0.1"></plugin>
+		</plugin-list>
+	</ObjectDependencies>
+	<CustProcAlgrList></CustProcAlgrList>
+	<ProcessList>
+		<ProcBase Name="at  lev750all250: copy creating 'lev750all2000' above" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+			<vrblValMaxCycle>
+				<DValue value="1." type="double"></DValue>
+			</vrblValMaxCycle>
+			<Algorithm guid="422F931B-FB82-4853-A773-2A821FE23893">
+				<Params>
+					<DValue type="lvlName" name="valMapLvl">
+						<MapLvlProxy strName="lev750all2000" bVrbl="0">
+							<Assignment MapLvl="1" MapName="main"></Assignment>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</MapLvlProxy>
+					</DValue>
+					<DValue value="1" type="bool" name="bUp"></DValue>
+				</Params>
+			</Algorithm>
+			<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+				<Params>
+					<DValue type="lvlName" name="valMapLvl">
+						<MapLvlProxy strName="lev750all250" bVrbl="0">
+							<Assignment MapLvl="2" MapName="main"></Assignment>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</MapLvlProxy>
+					</DValue>
+					<DValue type="vector" name="mClssFltr">
+						<Values>
+							<DValue value="Disabled" type="string" indx="0"></DValue>
+						</Values>
+					</DValue>
+					<DValue type="threshold" name="valThrsh"></DValue>
+					<DValue type="threshold" name="valThrsh2"></DValue>
+					<DValue value="From Parent" type="string" name="valMap"></DValue>
+					<DValue value="From Parent" type="string" name="valROI"></DValue>
+					<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+					<DValue value="4" type="int" name="iVersion"></DValue>
+					<DValue value="-1" type="int" name="iOldLvl"></DValue>
+					<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+					<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+				</Params>
+			</Domain>
+			<SubProc></SubProc>
+		</ProcBase>
+		<ProcBase Name="with Area &lt;= 2000 Pxl at  lev750all2000: remove objects (merge by shape)" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+			<vrblValMaxCycle>
+				<DValue value="1." type="double"></DValue>
+			</vrblValMaxCycle>
+			<Algorithm guid="47D33362-BDFB-4750-8755-11E545062EE8">
+				<Params>
+					<DValue type="vector" name="mClssFltr">
+						<Values>
+							<DValue value="Disabled" type="string" indx="0"></DValue>
+						</Values>
+					</DValue>
+					<DValue value="0" type="bool" name="bShowAdv"></DValue>
+					<DValue value="0" type="int" name="eMode"></DValue>
+					<DValue type="vector" name="vLayerFlags">
+						<Values></Values>
+					</DValue>
+					<DValue value="0" type="bool" name="bUseThrsh"></DValue>
+					<DValue value="20." type="double" name="vrblThrshColor"></DValue>
+					<DValue value="0.20000000000000001" type="double" name="vrblThrshBrdr"></DValue>
+					<DValue value="0" type="bool" name="bUseLgcyPrnt"></DValue>
+				</Params>
+			</Algorithm>
+			<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+				<Params>
+					<DValue type="lvlName" name="valMapLvl">
+						<MapLvlProxy strName="lev750all2000" bVrbl="0">
+							<Assignment MapLvl="1" MapName="main"></Assignment>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						</MapLvlProxy>
+					</DValue>
+					<DValue type="vector" name="mClssFltr">
+						<Values>
+							<DValue value="Disabled" type="string" indx="0"></DValue>
+						</Values>
+					</DValue>
+					<DValue type="threshold" name="valThrsh">
+						<TermThrsh eCmpr="1" eBaseUnit="1">
+							<PropDscrId GUID="03E04ED0-94DD-45ee-801E-14D70E6E2417" InstID="Area"></PropDscrId>
+							<ProcVrblValPxl>
+								<DValue value="2000." type="double"></DValue>
+							</ProcVrblValPxl>
+						</TermThrsh>
+					</DValue>
+					<DValue type="threshold" name="valThrsh2"></DValue>
+					<DValue value="From Parent" type="string" name="valMap"></DValue>
+					<DValue value="From Parent" type="string" name="valROI"></DValue>
+					<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+					<DValue value="4" type="int" name="iVersion"></DValue>
+					<DValue value="-1" type="int" name="iOldLvl"></DValue>
+					<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+					<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+				</Params>
+			</Domain>
+			<SubProc></SubProc>
+		</ProcBase>
+	</ProcessList>
+	<ExportedItems></ExportedItems>
+	<LcnsIds></LcnsIds>
+</eCog.Proc>
