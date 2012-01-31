@@ -1,0 +1,7 @@
+select = arcpy.Select_analysis(veg, "select“)
+buffer = arcpy.Buffer_analysis(roads, “buffer”, “75 Feet”)
+
+
+
+arcpy.MakeFeatureLayer_management ("ccapForChange", "ccaplyr")
+arcpy.SelectLayerByAttribute_management( "ccaplyr", "NEW_SELECTION",  ' "ChangeChec" = 1 ')
