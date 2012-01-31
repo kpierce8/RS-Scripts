@@ -1,0 +1,33 @@
+
+check8 <- checkData[checkData[,1] == 8,]
+check7 <- checkData[checkData[,1] == 7,]
+check1_6 <- checkData[checkData[,1] < 7,]
+par(mfrow=c(1,2))
+boxplot(check8[,7:12])
+boxplot(check7[,7:12])
+
+boxplot(check8[,34:44])
+boxplot(check7[,34:44])
+
+
+checkDataRF <- data.frame(checkData, rfChange$votes, value= abs(rfChange$votes[,1]-rfChange$votes[,2]))
+
+filterData <- checkDataRF[checkDataRF$value > 0.0,]
+dim(checkDataRF)
+dim(filterData)
+library(randomForest)
+
+rfChangeF <- randomForest(x=filterData[,3:44], y=as.factor(filterData$ChangeClass), cutoff=c(0.5,0.5), ntree=1000, na.action=na.omit)
+print(rfChangeF)
+
+
+
+changePredictions<-predict(rfChangeF, wriaModelData)
+changeProbabilities<-predict(rfChangeF, wriaModelData, type="prob")
+table(changePredictions)
+
+changeOut <- data.frame(PolyID = wriaModelData$PolyID, Pred = changePredictions,  changeProbabilities)
+
+#CSV join terribly in ARC, use DBF for joins
+library(foreign)
+write.dbf(changeOut, paste(drive,":\\WRIA",wria,"\\segments\\RDATA\\wria", wria,"predictionData5050", sep=""))

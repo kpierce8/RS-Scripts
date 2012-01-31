@@ -1,0 +1,17 @@
+ rfChange <- randomForest(x=samplesData2, y=as.factor(samplesTraining$ChangeClass), ntree=2500, na.action=na.omit)
+> print(rfChange)
+
+Call:
+ randomForest(x = samplesData2, y = as.factor(samplesTraining$ChangeClass),      ntree = 2500, na.action = na.omit) 
+               Type of random forest: classification
+                     Number of trees: 2500
+No. of variables tried at each split: 6
+
+        OOB estimate of  error rate: 16.82%
+Confusion matrix:
+    1    4    5    6   7 class.error
+1 312   55   14   49  14  0.29729730
+4  17 1585   11  107   5  0.08115942
+5   1    9 1055   59  16  0.07456140
+6  18  233   73 1074   5  0.23449751
+7  24   19   84   28 132  0.54006969
