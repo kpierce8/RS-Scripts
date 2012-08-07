@@ -1,11 +1,12 @@
-wria <- 13
-drive <- "D"
-class <- 1
+wria <- "15_2011"
+drive <- "F"
+model <- "AA_COMMISSION"
+
 
 library(XML)
-highc <- xmlToDataFrame(paste(drive,":\\WRIA",wria,"\\MODELS\\last452\\output\\aadata.xml",sep=""))
+highc <- xmlToDataFrame(paste(drive,":\\WRIA",wria,"\\MODELS\\",model,"\\output\\aadata.xml",sep=""))
 library(foreign)
 highc$PolyID <- as.numeric(highc$PolyID)
 highc$ChangeClass <- as.numeric(highc$ChangeClass)
 
-write.dbf(highc, paste(drive,":\\WRIA",wria,"\\MODELS\\last452\\outputPredChangeClassLAST452.dbf",sep=""))
+write.dbf(highc, paste(drive,":\\WRIA",wria,"\\MODELS\\",model,"\\",model,wria,".dbf",sep=""))
