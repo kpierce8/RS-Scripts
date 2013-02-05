@@ -59,7 +59,8 @@ badNamesAll <- c("inner_x","inner_y","level_name",
 
 
 
-eCogWS <- "E:\\wria15_2011\\eCognition\\wria15_09_11"
+eCogWS <- "J:\\wria22_2011\\eCognition\\w22_2011"
+wria <- "22"
 
 projDir <- dir(paste(eCogWS, "\\dpr", sep=""))
 
@@ -129,31 +130,52 @@ l50List[tile,"segments"] = dim(csvTable)[1]
 write.dbf(csvTable2, paste(eCogWS, "\\lev50attributes\\l50dbf\\",l50List[tile,1],"_",l50List[tile,3], ".dbf", sep=""))
 }
 
-for( tile in 1:length(AnaList[,1])) {
-#  for( tile in 103:103) { #USE TO RUN ONE
-  csvTable3 <- read.csv(paste(eCogWS, "\\Analysis\\",AnalysiscsvDir[tile], sep=""), sep=";")
-  csvTable4 <- data.frame(csvTable3, "tile"=l50List[tile,3])
-  dim(csvTable3)
-  AnaList[tile,"segments"] = dim(csvTable3)[1]
-  names(csvTable4) <- newNames
-  write.dbf(csvTable4, paste(eCogWS, "\\Analysis\\Analysisdbf\\",AnaList[tile,1],"_",AnaList[tile,3], ".dbf", sep=""))
-}
-
-
-
-#Make giant dbf file
-csvTable3 <- read.csv(paste(eCogWS, "\\Analysis\\",AnalysiscsvDir[tile], sep=""), sep=";")
+#Make lev 50 huge dbf file
+#Make giant dbf file 
+csvTable3 <- read.dbf(paste(eCogWS, "\\lev50attributes\\l50dbf\\",l50List[tile,1],"_",l50List[tile,3], ".dbf", sep=""))
 csvTable4 <- data.frame(csvTable3, "tile"=l50List[tile,3])
-names(csvTable4) <- newNames
-outAnalysisTable <- csvTable4
+#Need to fix names
+#names(csvTable4) <- newNames 
+outLev50Table <- csvTable4
 
 
-for( tile in 2:length(AnaList[,1])) {
-  csvTable3 <- read.csv(paste(eCogWS, "\\Analysis\\",AnalysiscsvDir[tile], sep=""), sep=";")
+for( tile in 2:length(l50List[,1])) {
+  csvTable3 <- read.dbf(paste(eCogWS, "\\lev50attributes\\l50dbf\\",l50List[tile,1],"_",l50List[tile,3], ".dbf", sep=""))
   csvTable4 <- data.frame(csvTable3, "tile"=l50List[tile,3])
-  names(csvTable4) <- newNames
-outAnalysisTable <- rbind(outAnalysisTable, csvTable4)  
+  #Need to fix names
+  #names(csvTable4) <- newNames
+  outLev50Table <- rbind(outLev50Table, csvTable4)  
 }
+
+write.csv(outLev50Table, paste(eCogWS, "\\lev50attributes\\l50dbf\\wria",wria,"Lev50.csv", sep=""), sep=",")
+
+testNew <- read.csv(paste(eCogWS, "\\lev50attributes\\l50dbf\\wria",wria,"Lev50.csv", sep=""))
+
+# for( tile in 1:length(AnaList[,1])) {
+# #  for( tile in 103:103) { #USE TO RUN ONE
+#   csvTable3 <- read.csv(paste(eCogWS, "\\Analysis\\",AnalysiscsvDir[tile], sep=""), sep=";")
+#   csvTable4 <- data.frame(csvTable3, "tile"=l50List[tile,3])
+#   dim(csvTable3)
+#   AnaList[tile,"segments"] = dim(csvTable3)[1]
+#   names(csvTable4) <- newNames
+#   write.dbf(csvTable4, paste(eCogWS, "\\Analysis\\Analysisdbf\\",AnaList[tile,1],"_",AnaList[tile,3], ".dbf", sep=""))
+# }
+
+
+
+#Make giant dbf file 
+# csvTable3 <- read.csv(paste(eCogWS, "\\Analysis\\",AnalysiscsvDir[tile], sep=""), sep=";")
+# csvTable4 <- data.frame(csvTable3, "tile"=l50List[tile,3])
+# names(csvTable4) <- newNames
+# outAnalysisTable <- csvTable4
+# 
+# 
+# for( tile in 2:length(AnaList[,1])) {
+#   csvTable3 <- read.csv(paste(eCogWS, "\\Analysis\\",AnalysiscsvDir[tile], sep=""), sep=";")
+#   csvTable4 <- data.frame(csvTable3, "tile"=l50List[tile,3])
+#   names(csvTable4) <- newNames
+# outAnalysisTable <- rbind(outAnalysisTable, csvTable4)  
+# }
 
 stitchData <- read.dbf("E:/wria15_2011/Segments/EXPORT_ATTRIBUTES/stitched15b.dbf")
 #Get stitched datatable

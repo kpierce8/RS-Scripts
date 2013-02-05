@@ -28,18 +28,20 @@ badNamesAll <- c("inner_x","inner_y","level_name",
                  "GLCM.Entropy..quick.8.11..Layer.6..all.dir..","GLCM.Homogeneity..quick.8.11..Layer.5..all.dir..","GLCM.Homogeneity..quick.8.11..Layer.10..all.dir..",
                  "tile")
 #forgot stitched index
-allStatsInd <- read.csv("E:\\wria15_2011\\eCognition\\wria15_09_11\\Analysis\\Indexwria15_2009_5bandhm5.csv", sep=";")
-allStats <- read.csv("E:\\wria15_2011\\eCognition\\wria15_09_11\\Analysis\\allwria15_2009_5bandhm5.csv", sep=";")
+allStatsInd <- read.csv("J:\\wria15_2011\\eCognition\\wria15_09_11\\Analysis\\Indexwria15_2009_5bandhm5.csv", sep=";")
+allStats <- read.csv("J:\\wria15_2011\\eCognition\\wria15_09_11\\Analysis\\allwria15_2009_5bandhm5.csv", sep=";")
 
 w15segStats <- data.frame(stitchedID = allStatsInd$stitched_ID, allStats)
 head(w15segStats)
 
-write.dbf(w15segStats,"E:\\wria15_2011\\Segments\\stitchedStats.dbf" )
+
 
 length(newNamesAll)
 dim(w15segStats)
 
 names(w15segStats) <- newNamesAll
+write.dbf(w15segStats,"J:\\wria15_2011\\Segments\\stitchedStats.dbf" )
+
 #Get zonal results
 
 expAttributes <- "E:\\wria15_2011\\Segments\\EXPORT_ATTRIBUTES"

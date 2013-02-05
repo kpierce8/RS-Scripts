@@ -1,0 +1,3 @@
+dave <- read.csv("C:\\data\\Copy of Book3.csv")
+
+plot(jitter(dave[,2],50),jitter(dave[,1],75),pch=as.numeric(dave[,3]),cex=1.25, col=as.numeric(dave[,3]), xlab="Span/Channel Width %", ylab="Installed Slope")
