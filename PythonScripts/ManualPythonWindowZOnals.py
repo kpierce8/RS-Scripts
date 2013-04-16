@@ -1,15 +1,13 @@
 
 rasterDict = {
-              "dem10":"I:/wria39_2011/IMAGERY/DEM/wria39_dem10.img",
-             "aspect10":"I:/wria39_2011/IMAGERY/DEM/wria39_dem10_as.img",
-             "slope10":"I:/wria39_2011/IMAGERY/DEM/wria39_dem10_sl.img",
+              "veg09":"J:/wria10_2009/Separation/wria10_2009_10class.img"
               }
 
 batchSize = 70000			  
-exp_workspace = "I:/wria39_2011/Segments/EXPORT_ATTRIBUTES"
+exp_workspace = "J:/wria10_2009/Segments/EXPORT_ATTRIBUTES"
 dataOut = exp_workspace + "/"
-tPolys = "wria39_11Segments"
-rasters = ["dem10","aspect10","slope10"]
+tPolys = "wria10Segments"
+rasters = ["veg09"]
 wria = 39
 
 

@@ -1,11 +1,6 @@
-#wria <- "62_2011"
-#drive <- "G"
-#model <- "mv_Change_Sample"
-#model <- "AA_PredictedChange"
-
 #One of the weirdest R constructs ever [PASTE WINDOWS PATH AFTER
 target <-scan(what="character",allowEscapes=F) 
-J:\wria10_2009\Models\landSamples2009\output\AAData.xml
+J:\wria09_2009\Models\AAChange\output\AAData.xml
 
 #blank line ends interactive input so to speak
 print(target)
@@ -27,15 +22,16 @@ highc$ChangeClass <- as.numeric(as.vector(highc$ChangeClass))
 highc$data1 <- as.numeric(as.vector(highc$data1))
 
 summary(highc)
-table(highc$ChangeClass)
+
 write.dbf(highc, paste(outputPath,"/",outName,"AA.dbf",sep=""))
 
+#New Summary Code
+table(highc$ChangeClass)
+table(highc$EndClass)
+table(highc$percentChange)
+table(highc$ChangeClass,highc$EndClass)
 
-
-with(highc, tapply(data1,ChangeClass,sum))
-
-changed <- with(highc, sum(highc[ChangeClass < 4, "data1"]))
-changed
-nonchanged <- with(highc, sum(highc[ChangeClass > 3, "data1"]))
-
-changed/nonchanged
+changes <- highc[highc$EndClass > 0,]
+dim(changes)
+table(changes$ChangeClass,changes$EndClass,changes$percentChange)
+changes[changes$percentChange == 0,"PolyID"]
