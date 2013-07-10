@@ -1,6 +1,6 @@
 #One of the weirdest R constructs ever [PASTE WINDOWS PATH AFTER
 target <-scan(what="character",allowEscapes=F) 
-J:\wria09_2009\Models\AAChange\output\AAData.xml
+J:\wria18_2009\Models\Round1Low\output\AAData.xml
 
 #blank line ends interactive input so to speak
 print(target)
